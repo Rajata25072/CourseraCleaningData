@@ -55,3 +55,22 @@ fBodyGyroJerkMag<br>
 ## Direction
 
 * '.X' '.Y' or '.Z' is used to denote 3-axial signals in the X, Y and Z directions respectively.
+
+# Data Processing
+
+The original data was split into test and training data "\test" and "\train" directories.<br>
+
+The run_analysis.R script performs the following actions:
+1. rbinds x-data (measurements) and y-data (activities) and subjects from the test and training sets
+2. Properly indexes the y-data with activity names (instead of numbers)
+3. Combines activity, subject, and measurement data
+4. Selects only data variables that have either the "mean(" or "str(" string within the variable name
+5. Cleans the remaining variable names by:
+	* replacing "-" with "."
+	* removing all "()" characters since these can cause problems in processing
+	* Fixed "BodyBody" variable names to read only "Body"
+7. Saves cleaned dataframe into dataframe `_df_`
+6. Pivots data frame on "activity" and "subject" as id columns by melt() (Dataframe `_dfmelt_`)
+7. Recasts variables by means of all measurements by activity, then subject (Dataframe `_dfcast_`)
+8  Saves dataframe `_dfcast_` as a table via write.table() into "JWCourseProjectSoln.txt"
+
