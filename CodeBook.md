@@ -4,7 +4,7 @@ The following is a description for the column names within "JWCourseProjectSoln.
 
 * The data is sorted first by activity, then subject 
 	* Activities are chosen from the following 6 activities: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
-	* Subjects are 1 to 30
+	* Subjects are numbered from 1 to 30
 * The remaining columns are of the format: "FeatureNames.Measure.Direction"
 	* Example: tBodyAcc.mean.X
 
