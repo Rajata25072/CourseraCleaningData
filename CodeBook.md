@@ -18,7 +18,16 @@ The following was three paragraphs were taken verbatim from features_info.txt of
 >Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc, fBodyAccJerk, fBodyGyro, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals).
 
 * The script run_analysis.R takes the mean for all variables that were represented by either a mean or standard deviation (mean() or std()) for each activity per each test subject.
+
+* The segmented feature names contains these discrete parts:
+	* t is for time, f is for frequency
+	* Body or Gravity part of motion
+	* Acc for measured by accelerometer or Gyro for measured by gyroscope
+	* Jerk (optional) for Jerky motion
+	* Mag (optional) for magnitude
+
 * The following are the "FeatureName" section of the column names as described above:  <br>
+
 
 tBodyAcc<br>
 tGravityAcc<br>
