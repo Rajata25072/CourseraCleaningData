@@ -36,9 +36,9 @@ fBodyGyroJerkMag<br>
 
 ## Measure
 
-*The resultant compiled values are:
-	*'.mean': Mean of mean value from the original dataset<br>
-	*'.std': Mean of Standard deviation from the original dataset<br>
+* The resultant compiled values are:
+	* '.mean': Mean of mean value from the original dataset<br>
+	* '.std': Mean of Standard deviation from the original dataset<br>
 
 ## Direction
 
