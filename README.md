@@ -1,5 +1,5 @@
 ## Coursera "Getting and Cleaning Data" course project solution
-## run_analysis.R
+# run_analysis.R
 
 This R script processes data from the Human Activity Recognition Using Smartphones Dataset
 by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto. Which can be obtained from here:
