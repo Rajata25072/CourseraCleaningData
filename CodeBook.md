@@ -8,7 +8,7 @@ The following is a description for the column names within "JWCourseProjectSoln.
 * The remaining columns are of the format: "FeatureNames.Measure.Direction" described below
 	* Example: tBodyAcc.mean.X
 
-## FeatureNames
+### FeatureNames
 The following was three paragraphs were taken verbatim from features_info.txt of the original data (see README.md for references):
 
 >The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
@@ -47,12 +47,12 @@ fBodyAccJerkMag<br>
 fBodyGyroMag<br>
 fBodyGyroJerkMag<br>
 
-## Measure
+### Measure
 
 * '.mean': Mean of the mean measurement for each activity per sbuject from the original dataset<br>
 * '.std': Mean of the standard deviation from the mean measurement for each activity per subject from the original dataset<br>
 
-## Direction
+### Direction
 
 * '.X' '.Y' or '.Z' is used to denote 3-axial signals in the X, Y and Z directions respectively.
 
