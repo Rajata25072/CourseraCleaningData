@@ -1,5 +1,25 @@
-#initialize libraries
-library(plyr)
+# Coursera "Getting and Cleaning Data" by J. Leek, R. Peng and B. Caffo
+# Course project solution prepared by J. Warrington on 5/25/2014
+#
+# The following dataframes are left in R after completion of the script:
+# df        - The cleaned dataframe from activity, subject, and measurement data.
+#             Only means and standard deviations are kept
+# dfmelted  - The df dataframe melted using activity and subjects as id columns
+# dfcasted  - The recasted dfmelted dataframes as means for all measurments for activity and subject
+
+
+#initialize libraries if not found, attempt to load and install
+if(require(plyr)) {
+  message("Library plyr loaded correctly")
+} else {
+  message("Library plyr not found, attempting to install...")
+  install.packages("plyr")
+  if(require(plyr)) {
+    message("Plyr installed and loaded correctly")
+  } else {
+    stop("Could not install plyr")
+  }
+}
 
 ## File Locations
 xtrain <- "UCI HAR Dataset/train/X_train.txt"
@@ -11,7 +31,7 @@ acts <- "UCI HAR Dataset/activity_labels.txt"
 trainsubs <-"UCI HAR Dataset/train/subject_train.txt"
 testsubs <- "UCI HAR Dataset/test/subject_test.txt"
 
-## Binding all X, Y, and Subject data into individual datasets
+## Reassembling training and test data from files for X, Y, and Subjects
 message("Reading data...")
 xdata <-rbind(read.table(xtrain),read.table(xtest))
 ydata <-rbind(read.table(ytrain),read.table(ytest))
@@ -39,7 +59,7 @@ names(ydata)<-c("id","activity")
 df <- cbind(subjects,ydata["activity"],xdata)
 
 #clearing temporary dataframes
-rm(activitylabels, subjects, featnames, xdata, ydata)
+rm(subjects, featnames, xdata, ydata)
 
 #formatting and cleaning data frame names
 names(df) <- gsub("-", ".", names(df))
