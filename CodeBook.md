@@ -70,6 +70,7 @@ The run_analysis.R script performs the following actions:<br>
 	* replacing "-" with "."
 	* removing all "()" characters since these can cause problems in processing
 	* Fixed "BodyBody" variable names to read only "Body"
+	* Changes all of the activities to lowercase for easier typing ("LAYING" to "laying", etc.)
 7. Saves cleaned dataframe into dataframe `df`
 6. Pivots data frame on "activity" and "subject" as id columns by melt() (Dataframe `dfmelt`)
 7. Recasts variables by means of all measurements by activity, then subject (Dataframe `dfcast`)
