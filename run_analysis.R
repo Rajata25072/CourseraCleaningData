@@ -45,7 +45,7 @@ names(xdata)<-featnames[,2]
 names(subjects) <- "subject"
 
 
-# trim xdata to only have means and standard deviations, add subjects
+# trim xdata to only have means and standard deviations
 colsubset<-c(grep("mean\\(", featnames[,2]), grep("std\\(", featnames[,2]))
 colsubset<-sort(colsubset)
 xdata<-xdata[,colsubset]
@@ -56,7 +56,7 @@ activitylabels[,2]<-tolower(activitylabels[,2])
 ydata<-join(ydata, activitylabels, by = "V1")
 names(ydata)<-c("id","activity")
 
-#combining data tables
+#combining data frames of first subjects, then activities, and finally xdata
 df <- cbind(subjects,ydata["activity"],xdata)
 
 #clearing temporary dataframes
