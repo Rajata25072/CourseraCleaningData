@@ -21,6 +21,7 @@ The script performs the following tasks:
 
 #Index of files
 Filename | Description
+---------|------------
 run_analysis.R | The R Script
 README.md | This File
 JWCourseProjectSoln.txt|Output File
