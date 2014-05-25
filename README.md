@@ -1,8 +1,8 @@
+## Coursera "Getting and Cleaning Data" course project solution
 ## run_analysis.R
 
 This R script processes data from the Human Activity Recognition Using Smartphones Dataset
-by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto.
-which can be obtained from here:
+by Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, and Luca Oneto. Which can be obtained from here:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
@@ -18,11 +18,12 @@ The script performs the following tasks:
 * Cleans the variable names and activity names to remove unwanted characters
 * Pivots the data to take the mean of each mean variable and standard deviation variable for every activity and subject
 * Outputs the data to JWCourseProjectSoln.txt
+* Leaves processed dataframes in R for further manipulation. See script for details.
 
 #Index of files
 Filename | Description
 ---------|------------
-run_analysis.R | The R Script
+run_analysis.R | The R Script, Course Project solution
 README.md | This File
 JWCourseProjectSoln.txt|Output File
 CodeBook.md| CodeBook indicating variable meanings and how original data was manipulated
