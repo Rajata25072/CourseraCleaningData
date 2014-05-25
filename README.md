@@ -1,5 +1,4 @@
-# Coursera "Getting and Cleaning Data" 
-# Course project solution
+# Coursera "Getting and Cleaning Data" Course Project Solution
 ### run_analysis.R
 
 This R script processes data from the Human Activity Recognition Using Smartphones Dataset
