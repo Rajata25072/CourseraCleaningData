@@ -1,11 +1,10 @@
-## Variable Descriptions
+# Variable Descriptions
 
 The following is a description for the variable names within "JWCourseProjectSoln.txt"
 
+* Variable Format: "FeatureNames.Measure.Direction"
 
-# Format: "FeatureNames.Measure.Direction"
-
-# FeatureNames
+## FeatureNames
 
 The features selected for the original unprocessed database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc and tGravityAcc) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.
  
@@ -35,12 +34,12 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-# Measure
+## Measure
 
 The resultant compiled values are
 '.mean': Mean of mean value from the original dataset
 '.std': Mean of Standard deviation from the original dataset
 
-# Direction
+## Direction
 
 '.X' '.Y' or '.Z' is used to denote 3-axial signals in the X, Y and Z directions respectively.
