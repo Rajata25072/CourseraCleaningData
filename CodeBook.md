@@ -65,7 +65,7 @@ The run_analysis.R script performs the following actions:<br>
 1. rbinds x-data (measurements) and y-data (activities) and subjects from the test and training sets
 2. Properly indexes the y-data with activity names (instead of numbers)
 3. Combines activity, subject, and measurement data
-4. Selects only data variables that have either the "mean(" or "str(" string within the variable name
+4. Selects only data variables that have either the "mean(" or "std(" string within the variable name
 5. Cleans the remaining variable names by:
 	* replacing "-" with "."
 	* removing all "()" characters since these can cause problems in processing
