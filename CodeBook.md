@@ -16,7 +16,6 @@ The following was three paragraphs were taken verbatim from features_info.txt of
 
 * The script run_analysis.R takes the mean for all variables that were represented by either a mean or standard deviation (mean() or std()) for each activity per each test subject.
 * The following are the column names as described above:  <br>
-
 tBodyAcc<br>
 tGravityAcc<br>
 tBodyAccJerk<br>
@@ -37,10 +36,10 @@ fBodyGyroJerkMag<br>
 
 ## Measure
 
-The resultant compiled values are
-'.mean': Mean of mean value from the original dataset<br>
-'.std': Mean of Standard deviation from the original dataset<br>
+*The resultant compiled values are:
+	*'.mean': Mean of mean value from the original dataset<br>
+	*'.std': Mean of Standard deviation from the original dataset<br>
 
 ## Direction
 
-'.X' '.Y' or '.Z' is used to denote 3-axial signals in the X, Y and Z directions respectively.
+* '.X' '.Y' or '.Z' is used to denote 3-axial signals in the X, Y and Z directions respectively.
