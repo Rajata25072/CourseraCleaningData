@@ -37,9 +37,9 @@ fBodyGyroJerkMag<br>
 ## Measure
 
 * The resultant compiled values are:
-	* '.mean': Mean of mean value from the original dataset<br>
-	* '.std': Mean of Standard deviation from the original dataset<br>
+	* '.mean': Mean of mean value for each activity and user from the original dataset<br>
+	* '.std': Mean of Standard deviation for each activity and user from the original dataset<br>
 
 ## Direction
 
-* '.X' '.Y' or '.Z' is used to denote 3-axial signals in the X, Y and Z directions respectively.
+	* '.X' '.Y' or '.Z' is used to denote 3-axial signals in the X, Y and Z directions respectively.
