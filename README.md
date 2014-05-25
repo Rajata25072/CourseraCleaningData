@@ -14,7 +14,7 @@ To work the script must be placed in the same directory as the "UCI HAR Dataset"
 
 The script performs the following tasks:
 * Combines the test data and training data into one large dataframe
-* Extracts only data for the mean and standard deviation variables
+* Extracts only data for the mean and standard deviation variables identified by "mean()" and "std()" strings in the variable names
 * Cleans the variable names and activity names to remove unwanted characters
 * Pivots the data to take the mean of each mean variable and standard deviation variable for every activity and subject
 * Outputs the data to JWCourseProjectSoln.txt
