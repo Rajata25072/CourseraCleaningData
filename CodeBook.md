@@ -23,8 +23,8 @@ The following was three paragraphs were taken verbatim from features_info.txt of
 	* t is for time, f is for frequency
 	* Body or Gravity part of motion
 	* Acc for measured by accelerometer or Gyro for measured by gyroscope
-	* Jerk (optional) for Jerky motion
-	* Mag (optional) for magnitude
+	* Jerk (optional) for Jerk signals
+	* Mag (optional) for magnitude calculated by Euclidean norm
 
 * The following are the "FeatureName" section of the column names as described above:  <br>
 
