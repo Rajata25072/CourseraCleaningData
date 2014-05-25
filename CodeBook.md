@@ -16,22 +16,38 @@ Ultimately the script delivers a mean for all variables that were represented by
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 
-tBodyAcc
+stBodyAcc
+
 tGravityAcc
+
 tBodyAccJerk
+
 tBodyGyro
+
 tBodyGyroJerk
+
 tBodyAccMag
+
 tGravityAccMag
+
 tBodyAccJerkMag
+
 tBodyGyroMag
+
 tBodyGyroJerkMag
+
 fBodyAcc
+
 fBodyAccJerk
+
 fBodyGyro
+
 fBodyAccMag
+
 fBodyAccJerkMag
+
 fBodyGyroMag
+
 fBodyGyroJerkMag
 
 ## Measure
