@@ -60,7 +60,8 @@ fBodyGyroJerkMag<br>
 
 The original data was split into test and training data "\test" and "\train" directories.<br>
 
-The run_analysis.R script performs the following actions:
+The run_analysis.R script performs the following actions:<br>
+
 1. rbinds x-data (measurements) and y-data (activities) and subjects from the test and training sets
 2. Properly indexes the y-data with activity names (instead of numbers)
 3. Combines activity, subject, and measurement data
@@ -69,8 +70,8 @@ The run_analysis.R script performs the following actions:
 	* replacing "-" with "."
 	* removing all "()" characters since these can cause problems in processing
 	* Fixed "BodyBody" variable names to read only "Body"
-7. Saves cleaned dataframe into dataframe `_df_`
-6. Pivots data frame on "activity" and "subject" as id columns by melt() (Dataframe `_dfmelt_`)
-7. Recasts variables by means of all measurements by activity, then subject (Dataframe `_dfcast_`)
-8  Saves dataframe `_dfcast_` as a table via write.table() into "JWCourseProjectSoln.txt"
+7. Saves cleaned dataframe into dataframe `df`
+6. Pivots data frame on "activity" and "subject" as id columns by melt() (Dataframe `dfmelt`)
+7. Recasts variables by means of all measurements by activity, then subject (Dataframe `dfcast`)
+8  Saves dataframe `dfcast` as a table via write.table() into `JWCourseProjectSoln.txt`
 
