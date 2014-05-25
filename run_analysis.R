@@ -1,11 +1,12 @@
 # Coursera "Getting and Cleaning Data" by J. Leek, R. Peng and B. Caffo
-# Course project solution prepared by J. Warrington on 5/25/2014
+# Course project solution prepared by JW on 5/25/2014
 #
 # The following dataframes are left in R after completion of the script:
 # df        - The cleaned dataframe from activity, subject, and measurement data.
 #             Only means and standard deviations are kept
 # dfmelted  - The df dataframe melted using activity and subjects as id columns
 # dfcasted  - The recasted dfmelted dataframes as means for all measurments for activity and subject
+# activitylabels - The names and associated levels of all the measured activities
 
 
 #initialize libraries if not found, attempt to load and install
