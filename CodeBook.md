@@ -2,6 +2,9 @@
 
 The following is a description for the column names within "JWCourseProjectSoln.txt"
 
+* The data is sorted first by activity, then subject 
+	* Activities are chosen from the following 6 activities: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
+	* Subjects are 1 to 30
 * Variable Format: "FeatureNames.Measure.Direction"
 * Example: tBodyAcc.mean.X
 
@@ -16,6 +19,7 @@ The following was three paragraphs were taken verbatim from features_info.txt of
 
 * The script run_analysis.R takes the mean for all variables that were represented by either a mean or standard deviation (mean() or std()) for each activity per each test subject.
 * The following are the column names as described above:  <br>
+
 tBodyAcc<br>
 tGravityAcc<br>
 tBodyAccJerk<br>
