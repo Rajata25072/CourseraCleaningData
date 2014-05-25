@@ -6,7 +6,7 @@ The following is a description for the column names within "JWCourseProjectSoln.
 	* Activities are chosen from the following 6 activities: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
 	* Subjects are 1 to 30
 * The remaining columns are of the format: "FeatureNames.Measure.Direction"
-* Example: tBodyAcc.mean.X
+	* Example: tBodyAcc.mean.X
 
 ## FeatureNames
 The following was three paragraphs were taken verbatim from features_info.txt of the original data (see README.md for references):
