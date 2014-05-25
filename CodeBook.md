@@ -40,8 +40,8 @@ fBodyGyroJerkMag<br>
 
 ## Measure
 
-* '.mean': Mean of mean value for each activity and user from the original dataset<br>
-* '.std': Mean of Standard deviation for each activity and user from the original dataset<br>
+* '.mean': Mean of the mean measurement for each activity per sbuject from the original dataset<br>
+* '.std': Mean of the standard deviation from the mean measurement for each activity per subject from the original dataset<br>
 
 ## Direction
 
