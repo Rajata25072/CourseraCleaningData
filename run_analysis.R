@@ -22,6 +22,18 @@ if(require(plyr)) {
   }
 }
 
+if(require(reshape2)) {
+  message("Library reshape2 loaded correctly")
+} else {
+  message("Library reshape2 not found, attempting to install...")
+  install.packages("plyr")
+  if(require(plyr)) {
+    message("LIbrary reshape2 installed and loaded correctly")
+  } else {
+    stop("Could not install reshape2")
+  }
+}
+
 ## File Locations
 xtrain <- "UCI HAR Dataset/train/X_train.txt"
 ytrain <- "UCI HAR Dataset/train/Y_train.txt"
